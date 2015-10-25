@@ -32,7 +32,17 @@ Javascript FOR loop optimization.
       }
       console.timeEnd("FOR-PRE");
   
-  Post-increment of i caches the value and uses cached value while iterating, which is bit memory consumption        process. So making PRE-Increment skips the Post-Increment process.
-      
+  Post-increment of i in Simple FOR loop caches the value and uses cached value while iterating, which is bit        memory consumption process. So making PRE-Increment skips the Post-Increment process.
+
+# Caching Condition in Loop
+      console.time("FORCACHE");
+      for(var p = 0, k = nums.length; p < k; ++p) {
+            square(nums[p]);
+      }
+      console.timeEnd("FORCACHE");
+  
+  Calculating the length of array and assigning to variable, is more beneficial then calculating the length of       array each time. This small trick is effective to make loop optimizations.
+  
+ 
 #ToDo
   Test the same with different browsers and enviornment.

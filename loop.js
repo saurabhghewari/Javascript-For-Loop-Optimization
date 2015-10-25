@@ -24,11 +24,11 @@
       console.timeEnd("FOR-PRE");
 
       //Optimized Loop
-      console.time("FORRANDLENGTH");
+      console.time("FORRCACHE");
       for(var p = 0, k = nums.length; p < k; ++p) {
             square(nums[p]);
       }
-      console.timeEnd("FORRANDLENGTH");
+      console.timeEnd("FORRCACHE");
 
       //simple for Reverse loop
       console.time("FOR");
@@ -38,7 +38,7 @@
       console.timeEnd("FOR");
 
       console.time("FOEEACH");
-      nums.forEach(function(num){
+      nums.forEach(function(num) {
             square(num);
       });
       console.timeEnd("FOEEACH");

@@ -51,6 +51,7 @@
     });
     console.timeEnd("FOREACH");
   ForEach loop executes provided function once per array element. For Each loop is costly then other provided        above. For more info on for each loop visit this 
+  
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
  
 #ToDo

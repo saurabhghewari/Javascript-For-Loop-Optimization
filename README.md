@@ -7,10 +7,10 @@ Javascript FOR loop optimization.
   
 # Pre-Requisites
   Create the nums array with some random large numbers. More info in loop.js.
-    var nums = [];
-    for(var i = 0; i<1000;++i) {
-      nums.push(Math.floor((Math.random() * 34359738368) + 1));
-    }
+  var nums = [];
+  for(var i = 0; i<1000;++i) {
+    nums.push(Math.floor((Math.random() * 34359738368) + 1));
+  }
   function square(num) {
     return num * num;
   }
@@ -26,11 +26,11 @@ Javascript FOR loop optimization.
   This is the simple loop used by almost all developers specially freshers. No need to optimize this loop. But when   we deal with large size of array, having large numbers or complext logic withing the loop, definetly loop          optimization is neccessary. Following are some loop optimization method.
 
 # simple for Loop with Pre-Increment.
-    console.time("FOR-PRE");
-    for(var i = 0; i < nums.length; ++i) {
-      square(nums[i]);
-    }
-    console.timeEnd("FOR-PRE");
+  console.time("FOR-PRE");
+  for(var i = 0; i < nums.length; ++i) {
+    square(nums[i]);
+  }
+  console.timeEnd("FOR-PRE");
   Post-increment of i caches the value and uses cached value while iterating, which is bit memory consumption        process. So making PRE-Increment skips the Post-Increment process.
       
 #ToDo

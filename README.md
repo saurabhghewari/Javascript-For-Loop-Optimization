@@ -13,6 +13,8 @@
         function square(num) {
           return num * num;
         }
+        
+    Now Open the console of browser to get difference between loop execution based on time.
     
 # Simple FOR loop
       var demoArr = ["saurabh", "ghewari", "Pandharpur","Maharashtra", "bitroots"];
@@ -35,13 +37,21 @@
 
 # Caching Condition in Loop
       console.time("FORCACHE");
-      for(var p = 0, k = nums.length; p < k; ++p) {
-            square(nums[p]);
+      for(var i = 0, len = nums.length; i < len; ++i) {
+            square(nums[i]);
       }
       console.timeEnd("FORCACHE");
   
   Calculating the length of array and assigning to variable, is more beneficial then calculating the length of       array each time. This small trick is effective to make loop optimizations.
   
+# ForEach Loop
+    console.time("FOREACH");
+    nums.forEach(function(num, index, array){
+      square(num);
+    });
+    console.timeEnd("FOREACH");
+  ForEach loop executes provided function once per array element. For Each loop is costly then other provided        above. For more info on for each loop visit this 
+  https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach
  
 #ToDo
   Test the same with different browsers and enviornment.

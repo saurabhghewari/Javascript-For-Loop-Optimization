@@ -6,14 +6,14 @@ Javascript FOR loop optimization.
   So giving a try to Optimize Javascript FOR Loop, making some experiment.
   
 # Pre-Requisites
-  Create the nums array with some random large numbers. More info in loop.js.
-    var nums = [];
-    for(var i = 0; i<1000;++i) {
-      nums.push(Math.floor((Math.random() * 34359738368) + 1));
-    }
-    function square(num) {
-      return num * num;
-    }
+    Create the nums array with some random large numbers. More info in loop.js.
+        var nums = [];
+        for(var i = 0; i<1000;++i) {
+          nums.push(Math.floor((Math.random() * 34359738368) + 1));
+        }
+        function square(num) {
+          return num * num;
+        }
     
 # Simple FOR loop
   var demoArr = ["saurabh", "ghewari", "Pandharpur","Maharashtra", "bitroots"];

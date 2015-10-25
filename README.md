@@ -7,13 +7,13 @@ Javascript FOR loop optimization.
   
 # Pre-Requisites
   Create the nums array with some random large numbers. More info in loop.js.
-  var nums = [];
-  for(var i = 0; i<1000;++i) {
-    nums.push(Math.floor((Math.random() * 34359738368) + 1));
-  }
-  function square(num) {
-    return num * num;
-  }
+    var nums = [];
+    for(var i = 0; i<1000;++i) {
+      nums.push(Math.floor((Math.random() * 34359738368) + 1));
+    }
+    function square(num) {
+      return num * num;
+    }
     
 # Simple FOR loop
   var demoArr = ["saurabh", "ghewari", "Pandharpur","Maharashtra", "bitroots"];
